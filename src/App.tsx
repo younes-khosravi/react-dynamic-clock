@@ -73,8 +73,8 @@ function App() {
   }
 
   return (
-    <div className="flex max-w-28 justify-center items-center">
-    <div  className="flex bg-gray-50 flex-col gap-2 w-full border border-gray-300 justify-center items-center p-2 rounded-2xl">      
+    <div className="flex w-full h-screen justify-center items-center">
+    <div  className="flex bg-gray-50 flex-col gap-2 w-full max-w-32 border border-gray-300 justify-center items-center p-2 rounded-2xl">      
     <div onClick={() => {setPopupType('morning')}} className={`flex justify-center items-center relative ${true ? `bg-green-200` : `bg-red-200`} rounded-[50%]`}>
 
       <img  className=" w-[100px] absolute z-20" src="/icons/clock1.svg" alt="not found" />
@@ -98,7 +98,7 @@ function App() {
       >
         <motion.div className="handle bg-primary-50" layout transition={spring} />
       </div>
-    <p className={`${true ? `text-primary-700` : `text-red-700`} text-BodyText/14/Bold`}>صبح</p>
+    <p className={`${true ? `text-primary-700` : `text-red-700`} text-BodyText/14/Bold`}>morning</p>
     </div>
   </div>
   </div>
